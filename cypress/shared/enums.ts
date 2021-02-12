@@ -8,7 +8,7 @@ export enum ETypeOfDelivery{
     dostawaPunkt = "pickupPoint"
 }
 
-export enum EPointOfDelivery{
+export enum EUkrainDeliver{
     ukrposhta = "UKR_POSHTA"
 }
 

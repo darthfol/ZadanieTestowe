@@ -1,10 +1,13 @@
 /// <reference types="Cypress" />
+
 export const inpostBtn = () => cy.get(':nth-child(1) > :nth-child(1) > .card > .card-body > .row > .mt-4 > .btn');
 
 // metoda odbioru
 export const deliveryRadio = () => cy.get('input[name="deliveryType"]');
 export const pointOfDevileryRadio = () => cy.get('input[name="restrictedPointType"]');
 export const nameOfPointInput = () => cy.get('input[type="search"]');
+export const selectedNameOfPoint = () => cy.get('[ng-hide="$select.isEmpty() || $select.open"] > div.ng-binding')
+
 
 // formularz nadawca - odbiorca
 export const senderNameInput = () => cy.get('#senderName');
@@ -26,7 +29,8 @@ export const parcelItemQuantityInput = (noOfItem: number) => cy.get(`input[name=
 export const parcelItemWeightInput = (noOfItem: number) => cy.get(`input[name="parcelItemWeight-${noOfItem.toString()}"]`);
 export const parcelItemValueClientCurrencyInput = (noOfItem: number) => cy.get(`input[name="parcelItemValueClientCurrency-${noOfItem.toString()}"]`);
 export const newParcelPositionBtn = () => cy.get('#dutyDeclaration button');
-
+export const sumOfCost = () => cy.get('input[name="totalValue"]');
+export const overBurdenAlert = () => cy.get('.col-lg-5 > .row > .pl-lg-0 > .ng-active');
 //zgody
 export const orderFormRegulationCheckBox = () => cy.get('#orderFormRegulation');
 export const orderFormRegulation2CheckBox = () => cy.get('#orderFormRegulation2');

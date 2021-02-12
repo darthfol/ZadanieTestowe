@@ -1,4 +1,4 @@
 {
-    "baseUrl": "https://paczkadoukrainy.pl/",
-    "timeOut": 8000
+    "baseUrl":"https://paczkadoukrainy.pl",
+    "chromeWebSecurity": false
 }

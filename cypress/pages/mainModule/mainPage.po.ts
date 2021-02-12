@@ -11,5 +11,5 @@ export const clickShowPrice = () => {
 }
 
 export const openPage = () =>{
-    cy.visit('pl/homepage');
+    cy.visit('/pl/homepage');
 }
