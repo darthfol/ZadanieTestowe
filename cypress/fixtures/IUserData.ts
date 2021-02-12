@@ -1,4 +1,4 @@
- import { ECountries } from '../shared/enums'
+ import { ECountries, ECurrency } from '../shared/enums'
  export interface IUserAdressData{
     name:string;
     street: string;
@@ -11,12 +11,10 @@
     mail: string;
 }
 
-export interface ICustomsDeclaration{
-    noDeclaration: number;
+export interface IParcelItem{
     itemName: string;
     quantity: number;
     weight: number;
     cost: number;
-    noTar: string;
-    orginCountry: ECountries
+    currency: ECurrency;   
 }

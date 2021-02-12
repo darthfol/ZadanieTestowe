@@ -25,6 +25,7 @@ export const parcelItemDescriptionInput = (noOfItem: number) => cy.get(`input[na
 export const parcelItemQuantityInput = (noOfItem: number) => cy.get(`input[name="parcelItemQuantity-${noOfItem.toString()}"]`);
 export const parcelItemWeightInput = (noOfItem: number) => cy.get(`input[name="parcelItemWeight-${noOfItem.toString()}"]`);
 export const parcelItemValueClientCurrencyInput = (noOfItem: number) => cy.get(`input[name="parcelItemValueClientCurrency-${noOfItem.toString()}"]`);
+export const newParcelPositionBtn = () => cy.get('#dutyDeclaration button');
 
 //zgody
 export const orderFormRegulationCheckBox = () => cy.get('#orderFormRegulation');
@@ -34,4 +35,7 @@ export const orderProhibitedGoodsCheckBox = () => cy.get('#orderProhibitedGoods'
 
 
 // accept form
-export const submitForm = (noOfItem: number) => cy.get('form[name="$ctrl.orderForm"] button[type="submit"]');
+export const submitForm = () => cy.get('form[name="$ctrl.orderForm"] button[type="submit"]');
+
+export const payForPacked = () => cy.get('.ml-auto > .btn');
+

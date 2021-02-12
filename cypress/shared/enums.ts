@@ -13,5 +13,11 @@ export enum EPointOfDelivery{
 }
 
 export enum EAddressOfDelivery{
-    charukiv = 'Charukiv, Poshtova 18'
+    charukiv = 'Charukiv, Poshtova 18',
+    charnobai = 'Charnobai, Cherkaska 18'
+}
+
+export enum ECurrency{
+    euro = "EUR",
+    zloty = "PLN"
 }

@@ -1,4 +1,5 @@
-import { IUserAdressData } from "./IUserData";
+import { ECurrency } from "../shared/enums";
+import { IParcelItem, IUserAdressData } from "./IUserData";
 
 export const sender: IUserAdressData = {
     name: 'Mobisense Monika Mazurek',
@@ -22,4 +23,19 @@ export const reciver: IUserAdressData = {
     nip: '6572441180',
     phoneNo: '505032236',
     mail: 'natalia@ivanova.pl'
+}
+
+export const czekoladki: IParcelItem={
+    itemName: 'Czekoladki',
+    quantity: 2,
+    weight: 10,
+    cost: 20,
+    currency: ECurrency.euro
+}
+export const kubek: IParcelItem = {
+    itemName: 'Kubek',
+    quantity: 2,
+    weight: 2,
+    cost: 5,
+    currency: ECurrency.euro
 }
